@@ -1,0 +1,194 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #e3f2fd, #bbdefb); /* Soft gradient background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #222, #444);
+    color: white;
+    text-align: center;
+    padding: 10px; /* Reduced padding */
+    font-size: 1.5em; /* Adjusted font size */
+}
+
+/* Navigation */
+nav {
+    background: #0073e6;
+    padding: 8px; /* Reduced padding */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Reduced gap between items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em; /* Reduced text size */
+    padding: 6px 12px; /* Smaller padding */
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    margin: 30px auto;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings for Sections */
+h2 {
+    color: #0073e6;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Uniform Connectedness (Unity) */
+.unity {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Continuation */
+.continuation {
+    border-bottom: 3px solid #0073e6;
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Closure */
+.closure {
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+}
+
+/* Proximity */
+.proximity {
+    display: flex;
+    gap: 10px;
+}
+
+/* Common Fate */
+.common-fate {
+    animation: moveTogether 2s infinite alternate;
+}
+
+@keyframes moveTogether {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(20px); }
+}
+
+/* Symmetry */
+.symmetry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Parallelism */
+.parallelism {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Common Region */
+.common-region {
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+/* Focal Point */
+.focal-point {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #0073e6;
+    text-align: center;
+}
+
+/* Simplicity */
+.simplicity {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+img {
+    width: 100%; /* Makes images responsive */
+    max-width: 600px; /* Restricts maximum size */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Prevents inline display issues */
+    margin: 0 auto; /* Centers images */
+}
+
+.image-credit {
+    font-size: 0.8em;
+    color: #666;
+    text-align: center;
+    margin-top: 5px;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05); /* Light texture overlay */
+    pointer-events: none; /* Ensures it doesn’t interfere with interaction */
+}
+
+
